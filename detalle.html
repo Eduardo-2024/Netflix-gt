@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Serie/Película - Netflix GT</title>
+    <style>
+        /* Estilos de este documento */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: auto;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .titulo {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .anno-lanzamiento {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            background-color: #e50914;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #ff0f25;
+        }
+        .sinopsis {
+            font-size: 16px;
+            padding: 0 20px;
+        }
+        .episodio {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .episodio img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .episodio-info {
+            flex: 1;
+        }
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Video -->
+        <div class="video-container">
+            <video controls autoplay>
+                <source src="assets/videos/DHAMER 2.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+        <!-- Título -->
+        <div class="titulo">
+            <h2>DHAMER</h2>
+        </div>
+
+        <!-- Botón de Reproducción -->
+        <button class="button">Reproducir</button>
+
+        <!-- Botón de Volver a Inicio -->
+        <a href="index.html" class="button">Volver a Inicio</a>
+
+        <!-- Año de Lanzamiento -->
+        <div class="anno-lanzamiento">
+            <p>Año de Lanzamiento: 2023</p>
+        </div>
+
+        <!-- Sinopsis -->
+        <div class="sinopsis">
+            <p> SE EXPLORA LA VIDA DE DHAMER COMO PREADOLESCENTE Y ADOLESCENTE, VIVIENDO CON JOYCE, UNA MADRE DROGADICTA Y LIONES, UN PADRE QUE A MENUDO SE AUSENTA. EL JOVEN COMIENZA A MOSTRAR UN GRAN INTERÉS EN LA DISECCIÓN DE ANIMALES MUERTOS, CON EL APOYO DE SU PADRE</p>
+        </div>
+
+        <!-- Episodios -->
+        <div class="episodio">
+            <img src="images/Episodio 1.jpg" alt="Episodio 1">
+            <div class="episodio-info">
+                <h3>1. Episodio 1</h3>
+                <p>Duración: 49 min</p>
+                <p>En el primer episodio de Dhamer, seguimos los pasos del joven protagonista mientras comienza a explorar su fascinación por la disección de animales muertos, a pesar de las preocupaciones de su madre y la ausencia de su padre.</p>
+            </div>
+        </div>
+
+        <div class="episodio">
+            <img src="images/Episodio 2.jpg" alt="Episodio 2">
+            <div class="episodio-info">
+                <h3>2. Episodio 2</h3>
+                <p>Duración: 45 min</p>
+                <p>En el segundo episodio, Dhamer se enfrenta a desafíos aún mayores cuando su interés en la disección de animales lo lleva a realizar experimentos más arriesgados, a medida que su obsesión se profundiza.</p>
+            </div>
+        </div>
+
+        <div class="episodio">
+            <img src="images/Episodio 3.jpg" alt="Episodio 3">
+            <div class="episodio-info">
+                <h3>3. Episodio 3</h3>
+                <p>Duración: 52 min</p>
+                <p>El tercer episodio sigue a Dhamer mientras se adentra en terrenos peligrosos, con consecuencias inesperadas. Su búsqueda de conocimiento y su relación con su entorno se vuelven cada vez más complejas.</p>
+            </div>
+        </div>
+
+        <div class="episodio">
+            <img src="images/Episodios.jpg" alt="Episodio 4">
+            <div class="episodio-info">
+                <h3>4. Episodio 4</h3>
+                <p>Duración: 48 min</p>
+                <p>En el episodio final de la temporada, Dhamer se enfrenta a decisiones difíciles y a las consecuencias de sus acciones. Su viaje hacia la madurez lo lleva a lugares oscuros y desafiantes.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

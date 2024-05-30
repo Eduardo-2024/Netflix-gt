@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Netflix GT</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #141414;
+            padding: 20px 0;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .principal {
+            position: relative;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contenido {
+            position: relative;
+            display: inline-block;
+            overflow: hidden; /* Ocultar que la animación no se vea fuera del margen */
+        }
+
+        .principal img,
+        .pelicula img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.5s; /* Transición suave */
+        }
+
+        .principal:hover img,
+        .pelicula:hover img {
+            transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor sobre la imagen */
+        }
+
+        .principal .info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0; /* Ajustar el ancho del contenedor */
+            text-align: center; /* Centrar el texto */
+            background-color: transparent; /* Fondo transparente */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .principal .info p {
+            margin: 0;
+            color: #fff;
+        }
+
+        .principal .btn {
+            background-color: rgba(0, 0, 0, 0.7); /* Color de fondo con transparencia */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin: 5px auto; /* Margen automático para centrar horizontalmente */
+            display: block; /* Convertir en bloque para aplicar margen automático */
+            border: none; /* Quitamos el borde */
+            cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+            transition: background-color 0.3s; /* Transición suave del color de fondo */
+        }
+
+        .principal .btn:hover {
+            background-color: rgba(0, 0, 0, 0.5); /* Cambiamos el color de fondo al pasar sobre el botón */
+        }
+
+        .categoria {
+            margin-bottom: 40px;
+        }
+
+        .categoria h2 {
+            margin-left: 20px;
+            font-size: 24px;
+        }
+
+        .peliculas {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* Columnas iguales */
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .pelicula img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Esto asegura que la imagen cubra el espacio sin distorsionarse */
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #141414;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #737373;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/netflix.jpg" alt="Netflix Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Películas</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Mi lista</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+       
+        <!-- Serie Principal -->
+        <section class="principal">
+            <div class="contenido">
+                <img src="images/Dhamer.jpg" alt="DHAMER">
+                <div class="info">
+                    <p>Violencia | Drama | Atrapador</p>
+                    <a href="detalle.html" class="btn">Ver</a>
+                    <a href="#" class="btn">Mi lista</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categorías -->
+        <section class="categoria">
+            <h2>Series de Comedia</h2>
+            <div class="peliculas">
+                <div class="pelicula"><img src="images/Kobra_kai.jpeg.jpg" alt="Kobra kai"></div>
+                <div class="pelicula"><img src="images/Fubar.jpg" alt="Fubar"></div>
+                <div class="pelicula"><img src="images/DesEncantado.jpg" alt="DesEncantado"></div>
+                <div class="pelicula"><img src="images/Scott.jpg" alt="Scott"></div>
+                <div class="pelicula"><img src="images/Inside.jpg" alt="Inside"></div>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Series para Ver en Familia</h2>
+            <div class="peliculas">
+                <div class="pelicula"><img src="images/Adventure time.jpg" alt="Familia 1"></div>
+                <div class="pelicula"><img src="images/Bob esponja.jpg" alt="Familia 2"></div>
+                <div class="pelicula"><img src="images/Jurassic.jpg" alt="Familia 3"></div>
+                <div class="pelicula"><img src="images/Pokemon.jpg" alt="Familia 4"></div>
+                <div class="pelicula"><img src="images/Regular show.jpg" alt="Familia 5"></div>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Mini Series</h2>
+            <div class="peliculas">
+                <div class="pelicula"><img src="images/Bebe reno.jpg" alt="Miniseries 1"></div>
+                <div class="pelicula"><img src="images/Gambito.jpg" alt="Miniseries 2"></div>
+                <div class="pelicula"><img src="images/Lea.jpg" alt="Miniseries 3"></div>
+                <div class="pelicula"><img src="images/Crime.jpg" alt="Miniseries 4"></div>
+                <div class="pelicula"><img src="images/Jeffrey.jpg" alt="Miniseries 5"></div>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Cine Romántico</h2>
+            <div class="peliculas">
+                <div class="pelicula"><img src="images/About time.jpg" alt="Romántico 1"></div>
+                <div class="pelicula"><img src="images/Her.jpg" alt="Romántico 2"></div>
+                <div class="pelicula"><img src="images/Esposa.jpg" alt="Romántico 3"></div>
+                <div class="pelicula"><img src="images/Asians.jpg" alt="Romántico 4"></div>
+                <div class="pelicula"><img src="images/Novias.jpg" alt="Romántico 5"></div>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <div class="container">
+                <p>Derechos de Autor © 2024 Netflix GT</p>
+            </div>
+        </footer>
+    </body>
+    </html>
